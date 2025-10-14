@@ -1,0 +1,127 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 2rem 3rem;
+    margin-top: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+    position: relative;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-15px);
+    }
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #275efe;
+    text-shadow: 1px 1px 3px rgba(39, 94, 254, 0.5);
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    border: 2px solid #275efe;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    border: 2px solid #275efe;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-bottom: 1.3rem;  /* This adds space below the search bar */
+}
+
+
+button {
+    background: #275efe;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    margin-left: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 5px 15px rgba(39, 94, 254, 0.4);
+}
+
+button:hover {
+    background: #89f7fe;
+    color: #275efe;
+    box-shadow: 0 8px 20px rgba(137, 247, 254, 0.6);
+}
+
+.weather-info {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.weather-info p {
+    margin: 0.4rem 0;
+}
+
+/* Animated icon container */
+.weather-icon {
+    font-size: 4rem;
+    margin: 0.5rem 0;
+    animation: swing 3s ease-in-out infinite;
+}
+
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+/* Error message style */
+.error-msg {
+    color: red;
+    font-weight: bold;
+    margin-top: 1rem;
+    animation: shake 0.5s ease forwards;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-8px);
+    }
+    75% {
+        transform: translateX(8px);
+    }
+}
